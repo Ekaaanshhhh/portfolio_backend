@@ -16,8 +16,9 @@ router.post("/send", async (req, res) => {
     }
 
     await resend.emails.send({
-      from: "ekaaanshhhh@gmail.com",
-      to: "ekanshsatsangi@gmail.com", // your receiving email
+      from: "onboarding@resend.dev",
+      to: "ekaaanshhhh@gmail.com", // your receiving email
+      reply_to: email,
       subject: `New message from ${name}`,
       html: `
         <h2>New Contact Form Message</h2>
